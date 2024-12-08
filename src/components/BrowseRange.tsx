@@ -19,7 +19,7 @@ export const BrowseRange = () => {
           {/* Product 1 */}
           <div className="bg-white shadow-md rounded-md overflow-hidden">
             <Image
-              src="/Dining.png" // Replace with the path to your product image
+              src="/Dining.png" // Ensure the image is in the public directory
               alt="Dining Room Product"
               width={381}
               height={480}
@@ -33,7 +33,7 @@ export const BrowseRange = () => {
           {/* Product 2 */}
           <div className="bg-white shadow-md rounded-md overflow-hidden">
             <Image
-              src="/Living.png" // Replace with the path to your product image
+              src="/Living.png" // Ensure the image is in the public directory
               alt="Living Room Product"
               width={381}
               height={480}
@@ -47,7 +47,7 @@ export const BrowseRange = () => {
           {/* Product 3 */}
           <div className="bg-white shadow-md rounded-md overflow-hidden">
             <Image
-              src="/bedroom.png" // Replace with the path to your product image
+              src="/bedroom.png" // Ensure the image is in the public directory
               alt="Bedroom Product"
               width={381}
               height={480}

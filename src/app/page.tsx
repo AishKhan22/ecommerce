@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div>
       <Hero />
-      <Link href="/shop">
+      <Link href="/shoppage">
         {/* Link for Shop */}
       </Link>
       <Link href="/contact">
