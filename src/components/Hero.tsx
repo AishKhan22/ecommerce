@@ -16,10 +16,11 @@ export const Hero = () => {
       </div>
 
       {/* Content Section */}
-      <div className="absolute bg-[#FFF3E3] max-w-[90%] md:max-w-[60%] lg:max-w-[40%] p-6 lg:pr-8 lg:pt-8 shadow-md rounded-md lg:right-0">
-        <h2 className="text-base md:text-lg text-[#333333] mb-2">
-          New Arrival
-        </h2>
+      <div
+        className="absolute bg-[#FFF3E3] max-w-[90%] md:max-w-[60%] lg:max-w-[40%] p-6 lg:pr-8 lg:pt-8 shadow-md rounded-md"
+        style={{ top: "253px", left: "739px" }} // Spacing adjustments
+      >
+        <h2 className="text-base md:text-lg text-[#333333] mb-2">New Arrival</h2>
         <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold text-[#B88E2F] mb-4 leading-tight">
           Discover Our <br /> New Collection
         </h1>

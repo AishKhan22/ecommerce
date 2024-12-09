@@ -3,8 +3,12 @@ import React from 'react';
 const Contacthero = () => {
   return (
     <div
-      className="relative bg-cover bg-center w-full h-[316px] sm:h-[60vh] md:h-[70vh] lg:h-[80vh]"
-      style={{ backgroundImage: 'url(/shop.png)' }} // Ensure the image is in the public folder
+      className="relative bg-cover bg-center"
+      style={{
+        width: '1440px',
+        height: '316px',
+        backgroundImage: 'url(/shop.png)', // Ensure the image is in the public folder
+      }}
     >
       {/* Overlay */}
       <div className="absolute inset-0 bg-black opacity-50"></div>

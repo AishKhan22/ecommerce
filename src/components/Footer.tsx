@@ -1,4 +1,5 @@
 import React from "react";
+import HorizontalLine from "./Horizontalline";
 
 export const Footer = () => {
   return (
@@ -80,6 +81,7 @@ export const Footer = () => {
           </div>
           </div>
           </div>
+          <HorizontalLine/>
 
       {/* Bottom Copyright Section */}
       <div className="text-left mt-8 text-sm text-gray-500">

@@ -4,6 +4,9 @@ import ProductGrid from "@/components/ProductGrid";
 import Link from "next/link";
 
 import Image from "next/image";
+import ImageGrid from "@/components/Imagegrid";
+
+
 
 export default function Home() {
   return (
@@ -25,16 +28,9 @@ export default function Home() {
         </button>
       </div>
 
-      {/* Add Image below the button */}
-      <div className="flex justify-center mt-8">
-        <Image
-          src="/bg.PNG" // Replace with the actual path to your image
-          alt="Descriptive text"
-          width={1760}
-          height={670}
-          className="object-cover" // optional, to make the image cover the container area
-        />
-      </div>
+      
+    <ImageGrid/>
+  
     </div>
   );
 }

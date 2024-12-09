@@ -1,6 +1,17 @@
 import React from "react";
 
-const ProductCard = ({ name, description, price, originalPrice, discount, imageUrl }: any) => {
+const ProductCard = ({
+  name,
+  description,
+  price,
+  originalPrice,
+  discount,
+  imageUrl,
+}: any) => {
+  // Determine badge color for specific products
+  const isCustomBadgeColor = ["Respira", "Muggo", "Potty"].includes(name);
+  const badgeColor = isCustomBadgeColor ? "bg-[#2EC1AC]" : "bg-red-500";
+
   return (
     <div className="bg-white shadow-lg rounded-lg w-[285px] h-[446px] m-auto flex flex-col">
       {/* Product Image with Discount Badge */}
@@ -10,9 +21,14 @@ const ProductCard = ({ name, description, price, originalPrice, discount, imageU
           alt={name}
           className="w-full h-full object-cover rounded-t-lg"
         />
-        <span className="absolute top-3 right-3 bg-red-500 text-white text-xs font-semibold px-2 py-1 rounded-full">
-          {discount}
-        </span>
+        {/* Show badge if discount is not null */}
+        {discount && (
+          <span
+            className={`absolute top-3 right-3 ${badgeColor} text-white text-xs font-semibold px-2 py-1 rounded-full`}
+          >
+            {discount}
+          </span>
+        )}
       </div>
 
       {/* Product Details */}
@@ -23,7 +39,9 @@ const ProductCard = ({ name, description, price, originalPrice, discount, imageU
         </h3>
 
         {/* Description */}
-        <p className="text-gray-600 text-sm h-[48px] overflow-hidden">{description}</p>
+        <p className="text-gray-600 text-sm h-[48px] overflow-hidden">
+          {description}
+        </p>
 
         {/* Pricing */}
         <div className="flex items-center justify-between mt-2">
@@ -36,4 +54,5 @@ const ProductCard = ({ name, description, price, originalPrice, discount, imageU
     </div>
   );
 };
+
 export default ProductCard;
