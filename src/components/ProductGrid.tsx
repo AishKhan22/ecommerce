@@ -18,7 +18,7 @@ const ProductGrid = () => {
       price: "Rp 2.500.000",
       originalPrice: "Rp 4.000.000",
       discount: "",
-      imageUrl: "2.png",
+      imageUrl: "leviosa.png",
     },
     {
       name: "Lolito",
